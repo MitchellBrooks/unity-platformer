@@ -8,6 +8,7 @@ TagManager:
   - Fire
   - Coin
   - Audio
+  - Health
   layers:
   - Default
   - TransparentFX

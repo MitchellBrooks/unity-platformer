@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public HealthScript healthManager;
     private bool isJumpPressed = false;
     private bool isJumpVelocityAdded = false;
     private bool isDoubleJumpUsed = false;
@@ -84,5 +85,6 @@ public class PlayerScript : MonoBehaviour
         transform.rotation = new Quaternion();
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
+        healthManager.decrementHealth(-1);
     }
 }
